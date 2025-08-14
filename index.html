@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32 Firmware Flasher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 Firmware Flasher</h1>
+
+    <label for="board">Seleziona la scheda:</label>
+    <select id="board">
+      <option value="liligo">Liligo T-Display</option>
+      <option value="ideaspark">Ideaspark</option>
+      <option value="arduino">Arduino ESP32</option>
+    </select>
+
+    <label for="binFile">Scegli file .bin:</label>
+    <input type="file" id="binFile" accept=".bin" />
+
+    <button id="flashBtn">FLASH</button>
+
+    <h2>Download File .ino</h2>
+    <ul>
+      <li><a href="sources/liligo.ino" download>Liligo</a></li>
+      <li><a href="sources/ideaspark.ino" download>Ideaspark</a></li>
+      <li><a href="sources/arduino-esp32.ino" download>Arduino ESP32</a></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
